@@ -38,16 +38,19 @@ $(function(){
             $("<button id=\"retour\">Revenir à la page de connexion</button>").insertBefore(".form");
             $("<h2>Connectez-vous</h2>").insertBefore("#retour");
       }
+
       $("#connexion").on("click", connexion);
 
+
+      //Ne marche pas --------------------------
       function retourConnexion(){
+        alert("ok");
             $(".form").css("display","none");
             $("#menu").css("display","block");
       }
       $("#retour").on("click", retourConnexion);
-
+      // ----------------------------------------
 
   });
-
 
 })
